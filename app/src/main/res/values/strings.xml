@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">JWT Auth Ktor + Android</string>
+    <string name="lock_icon">Lock Icon</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
 </resources>
