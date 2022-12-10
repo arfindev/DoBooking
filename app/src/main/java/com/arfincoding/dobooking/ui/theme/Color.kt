@@ -9,3 +9,4 @@ val Teal200 = Color(0xFF03DAC5)
 val LightGray100 = Color(0x27FBFBFA)
 
 val LightGreen400 = Color(0xFF1bb65c)
+val CustomGrey = Color(0xFFf6f5f5)

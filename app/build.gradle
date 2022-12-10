@@ -108,5 +108,12 @@ dependencies {
     implementation "androidx.room:room-paging:2.4.3"
 
 
+    // DataStore Preferences
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+
+
+    // Horizontal Pager and Indicators - Accompanist
+    implementation "com.google.accompanist:accompanist-pager:$accompanist_version"
+    implementation "com.google.accompanist:accompanist-pager-indicators:$accompanist_version"
 
 }

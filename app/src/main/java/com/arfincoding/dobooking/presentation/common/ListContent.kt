@@ -19,14 +19,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.paging.compose.LazyPagingItems
-import androidx.paging.compose.collectAsLazyPagingItems
 import androidx.paging.compose.items
 import coil.compose.rememberAsyncImagePainter
 import com.arfincoding.dobooking.domain.model.Hotel
-import com.arfincoding.dobooking.presentation.home_screen.HomeViewModel
-import com.arfincoding.dobooking.presentation.home_screen.TestHomeScreen
 import com.arfincoding.dobooking.ui.theme.LightGreen400
 import com.arfincoding.dobooking.ui.theme.RegularFont
 import com.arfincoding.dobooking.util.Constant
@@ -40,9 +36,8 @@ fun HotelItem(
         modifier = Modifier
             .fillMaxWidth()
             .height(150.dp),
-        shape = RoundedCornerShape(30.dp), elevation = 0.dp
+        shape = RoundedCornerShape(30.dp), elevation = 0.5.dp
     ) {
-
         Row(
             modifier = Modifier
                 .fillMaxSize()
@@ -60,8 +55,8 @@ fun HotelItem(
                     .clip(
                         RoundedCornerShape(20.dp)
                     )
-                    .size(height = 110.dp, width = 20.dp)
-                    .weight(2f),
+                    .size(height = 115.dp, width = 100.dp)
+                    .weight(1.7f),
                 contentScale = ContentScale.Crop
             )
             Spacer(modifier = Modifier.width(10.dp))
@@ -75,7 +70,7 @@ fun HotelItem(
                     text = hotel.hotelName,
                     fontFamily = RegularFont,
                     fontWeight = FontWeight.Bold,
-                    fontSize = 18.sp
+                    fontSize = 15.sp
                 )
                 Text(
                     text = hotel.city,
@@ -97,7 +92,7 @@ fun HotelItem(
                     text = "$${hotel.hotelPrice}",
                     fontFamily = RegularFont,
                     fontWeight = FontWeight.SemiBold,
-                    fontSize = 25.sp,
+                    fontSize = 20.sp,
                     style = TextStyle(
                         color = LightGreen400
                     )
@@ -106,7 +101,7 @@ fun HotelItem(
                     text = "/night",
                     fontFamily = RegularFont,
                     fontWeight = FontWeight.Normal,
-                    fontSize = 12.sp,
+                    fontSize = 10.sp,
                     style = TextStyle(color = Color.Gray)
                 )
                 Spacer(modifier = Modifier.height(10.dp))
@@ -115,7 +110,7 @@ fun HotelItem(
                     painter = painterResource(id = com.arfincoding.dobooking.R.drawable.bookmark),
                     contentDescription = "Icon",
                     tint = LightGreen400,
-                    modifier = Modifier.size(25.dp)
+                    modifier = Modifier.size(21.dp)
                 )
             }
         }
@@ -128,7 +123,7 @@ fun ListContent(
 ) {
     LazyColumn(
         contentPadding = PaddingValues(all = 10.dp),
-        verticalArrangement = Arrangement.spacedBy(20.dp)
+        verticalArrangement = Arrangement.spacedBy(5.dp)
     ) {
         items(
             items = hotels,

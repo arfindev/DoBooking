@@ -7,7 +7,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    private val repository: Repository
+    repository: Repository
 ) : ViewModel() {
 
     val getAllHotels = repository.getAllHotels()

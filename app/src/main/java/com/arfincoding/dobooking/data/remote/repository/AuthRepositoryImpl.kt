@@ -4,7 +4,7 @@ import android.content.SharedPreferences
 import com.arfincoding.dobooking.auth.AuthRequest
 import com.arfincoding.dobooking.auth.AuthResult
 import com.arfincoding.dobooking.data.remote.AuthApi
-import com.arfincoding.dobooking.domain.remote_repository.AuthRepository
+import com.arfincoding.dobooking.domain.repository.AuthRepository
 import retrofit2.HttpException
 
 class AuthRepositoryImpl(

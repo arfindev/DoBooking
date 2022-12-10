@@ -8,7 +8,7 @@ import com.arfincoding.dobooking.data.local.DoBookingDatabase
 import com.arfincoding.dobooking.data.paging_source.HotelRemoteMediator
 import com.arfincoding.dobooking.data.remote.DoBookingApi
 import com.arfincoding.dobooking.domain.model.Hotel
-import com.arfincoding.dobooking.domain.remote_repository.RemoteDataSource
+import com.arfincoding.dobooking.domain.repository.RemoteDataSource
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

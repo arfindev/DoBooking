@@ -5,7 +5,7 @@ import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import com.arfincoding.dobooking.data.remote.AuthApi
 import com.arfincoding.dobooking.data.remote.repository.AuthRepositoryImpl
-import com.arfincoding.dobooking.domain.remote_repository.AuthRepository
+import com.arfincoding.dobooking.domain.repository.AuthRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
